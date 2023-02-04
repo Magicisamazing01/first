@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>forms</title>
+</head>
+<body>
+    <form action="mailto:newsushanth0831@gmail.com" method="post" enctype="text/plain">
+        <fieldset>
+            <legend>personal information</legend>
+            <label for="name">Name: </label>
+            <input type="text" name="name" minlength="4" maxlength="16" size="15" placeholder="enter your name">
+            <br><br>
+            <label for="hobbies">Hobbies : </label><br><br>
+            <input type="checkbox" name="coding" checked>
+            <label for="coding">coding</label><br>
+            <input type="checkbox" name="drawing" >
+            <label for="drawing">drawing</label><br>
+            <input type="checkbox" name="music" >
+            <label for="music">music</label><br>
+            <br>
+            <b>choose Your fav color</b><!--avoid this use label insted of this-->
+            <br>
+            <input type="color" name="color" value="#af30ba">
+            <p><b>choose your date and time of birth :</b></p>
+            <br>
+            <input type="datetime-local" name="dob" min="2004-01-01T00:00" max="2023-02-04T00:00" value="2023-02-04T00:00">
+            <br>
+            <br>
+            <label for="place">Place</label>
+            <select name="place" id="place">
+                <optgroup label="India">
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Delhi">Delhi</option>
+                </optgroup>
+                <optgroup label="USA">
+                    <option value="LA">LA</option>
+                    <option value="california">california</option>
+                </optgroup>
+            </select>    
+            <br>
+            <br>
+            <label for="email">email :</E-mail></label>   
+            <input type="email" name="email" pattern="+ @gmail.com" size="30">
+            <br>
+            <br>
+            <label for="password">password</label>
+            <input type="password" name="password" minlength="8"> 
+            <br><br>
+            <label for="profile picture">please upload ur profile picture </label>  
+            <br><br>
+            <input type="file" name="profile picture">
+            <br><br>
+            <label for="no of skills">enter no of skills you have</label>
+            <input type="number" name="no of skills" min="1" max="10" value="0">
+            <br><br>
+            <label for="ph no">enter your ph no</label>
+            <br><br>
+            <input type="tel" name="ph no" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            <br><br>
+            <label for="gender">select ur gender</label>
+            <br><br>
+            <input type="radio" name="gender" id="gender">
+            <label for="male">Male</label>
+            <br><br>
+            <input type="radio" name="gender" id="gender">
+            <label for="female">feMale</label>
+            <br><br>
+            <input type="radio" name="gender" id="gender>
+            <label for="other">other</label>
+            <br><br>
+            <label for="rate">rate urself</label>
+            <input type="range" name="rate urself" min="0" max="10">
+            <br><br>
+            <input type="search" placeholder="type here to search" size="10">
+            <button>search</button>
+            <br><br>
+            <label for="feedback">enter ur feedback</label>
+            <textarea name="feedback" id="feedback" cols="50" rows="5"></textarea>
+            <br><br>
+            <input type="reset" name="reset" id="reset" value="delete" onclick="alert('page reset successful)">
+            <input type="submit" name="submit" id="submit" value="save nd submit" onclick="alert('form submitted')">
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>
